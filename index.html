@@ -8,91 +8,68 @@
   </head>
   <body>
     Burrito Guyz Beamsville Visitor Form
+    <form action="https://fabform.io/f/cXeY3NG" method="post">
+      
+          <label >Fullname
+        </label>
+            <input type="text" alt="name" placeholder="Firstname lastname" required />
 
-    <form accept-charset="utf-8"
-      action="https://formspree.io/f/{form_id}"
-      method="POST"
-      enctype="multipart/form-data"
-    >
-      <ul>
-        <li>
-          <label>
-            Full Name:
-            <input type="text" alt="name" placeholder="Firstname lastname" />
-          </label>
-        </li>
-        <li>
-          <label>
-            Phone number:
+    <br>
+          <label for="Phone number:">Phone number
+        </label>
             <input
               type="number"
               alt="phone number"
               placeholder="123-45-6789 "
-            />
-          </label>
-        </li>
-        <li>
-          <label>
+            required/>
+            <br>
+          <label for=" Your email:">
             Your email:
             <input
               type="email"
               alt="emailaddress"
               placeholder="abc@xyz.com"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-            />
+            required/>
           </label>
-        </li>
-        <li>
-          <label>
-            Your website:
+          <br>
+          <label for ="Your website:">
+            Your website:</label>
             <input type="text" alt="website" placeholder="www.xyz.com" />
-          </label>
-        </li>
-        <li>
-          <label>
-            Your Employee id :
+          <br>
+          <label  for ="Your Employee id :">
+            Your Employee id : </label>
             <input type="number" alt="employeeid" />
-          </label>
-        </li>
-        <li>
-          <label>
-            Employee Position :
+         <br>
+          <label for=" Employee Position :">
+            Employee Position :</label>
             <input type="text" alt="employeeposition" />
-          </label>
-        </li>
-        <li>
-          <label>
-            Employee Supervisor name :
+            <br>
+          <label for="Employee Supervisor name :">
+            Employee Supervisor name :</label>
             <input type="text" alt="Employee Supervisor name" />
-          </label>
-        </li>
-        <li>
+          
+<br>
           <label>
-            Supervisor Phone number:
+            Supervisor Phone number:</label>
             <input
               type="number"
               alt="Supervisor phone number"
               placeholder="123-45-6789 "
             />
-          </label>
-        </li>
-        <li>
-          <label>
-            Purpose of Visit:
+        <br>
+          <label for="Purpose of Visit:">
+            Purpose of Visit:</label>
             <input type="text" alt="Purpose of visit" />
-          </label>
-        </li>
-
-        <li>
-          <label>
-            Organization Name:
+        <br>
+          <label for="Organization Name:">
+            Organization Name:</label>
             <input type="text" alt="organizationname" />
-          </label>
-        </li>
-        <li>
-          <label>
-            In Store Operator name :
-            <select name="cars" id="cars">
+          <br>
+          <label for="In Store Operator name :">
+            In Store Operator name :</label>
+
+            <select name="In Store Operator name :" id="In Store Operator name :">
               <option disabled selected value="null"></option>
               <option value="aakash">aakash</option>
               <option value="ramanjot">ramanjot</option>
@@ -101,15 +78,12 @@
               <option value="ramandeep">ramandeep</option>
               <option value="rupinder">rupinder</option>
             </select>
-          </label>
-        </li>
-
-        <li>
+          <br> 
           <label>
-            Photo
+            Photo</label>
             <input type="file" alt="upload" />
-          </label>
-        </li>
+          
+
         <div id="current_date"></p>
             <script>
             document.getElementById("current_date").innerHTML = Date();
