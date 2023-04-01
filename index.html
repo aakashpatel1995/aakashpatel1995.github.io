@@ -7,20 +7,122 @@
     <title>Burrito Guyz Beamsville Visitor Tracking form</title>
   </head>
   <body>
+    Burrito Guyz Beamsville Visitor Form
+
     <form
       action="https://formspree.io/f/mzbqjagq"
       method="POST"
       enctype="multipart/form-data"
     >
-      <label>
-        Your email:
-        <input type="email" name="email" />
-      </label>
-      <label>
-        Your file:
-        <input type="file" name="upload" />
-      </label>
-      <button type="submit">Send</button>
+      <ul>
+        <li>
+          <label>
+            Full Name:
+            <input type="text" alt="name" placeholder="Firstname lastname" />
+          </label>
+        </li>
+        <li>
+          <label>
+            Phone number:
+            <input
+              type="number"
+              alt="phone number"
+              placeholder="123-45-6789 "
+            />
+          </label>
+        </li>
+        <li>
+          <label>
+            Your email:
+            <input
+              type="email"
+              alt="emailaddress"
+              placeholder="abc@xyz.com"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            />
+          </label>
+        </li>
+        <li>
+          <label>
+            Your website:
+            <input type="text" alt="website" placeholder="www.xyz.com" />
+          </label>
+        </li>
+        <li>
+          <label>
+            Your Employee id :
+            <input type="number" alt="employeeid" />
+          </label>
+        </li>
+        <li>
+          <label>
+            Employee Position :
+            <input type="text" alt="employeeposition" />
+          </label>
+        </li>
+        <li>
+          <label>
+            Employee Supervisor name :
+            <input type="text" alt="Employee Supervisor name" />
+          </label>
+        </li>
+        <li>
+          <label>
+            Supervisor Phone number:
+            <input
+              type="number"
+              alt="Supervisor phone number"
+              placeholder="123-45-6789 "
+            />
+          </label>
+        </li>
+        <li>
+          <label>
+            Purpose of Visit:
+            <input type="text" alt="Purpose of visit" />
+          </label>
+        </li>
+
+        <li>
+          <label>
+            Organization Name:
+            <input type="text" alt="organizationname" />
+          </label>
+        </li>
+        <li>
+          <label>
+            In Store Operator name :
+            <select name="cars" id="cars">
+              <option disabled selected value="null"></option>
+              <option value="aakash">aakash</option>
+              <option value="ramanjot">ramanjot</option>
+              <option value="mukund">Mukund</option>
+              <option value="palwinder">Palwinder</option>
+              <option value="ramandeep">ramandeep</option>
+            </select>
+          </label>
+        </li>
+
+        <li>
+          <label>
+            Photo
+            <input type="file" alt="upload" />
+          </label>
+        </li>
+        <div id="current_date"></p>
+            <script>
+            document.getElementById("current_date").innerHTML = Date();
+            </script>
+        <br>
+        <button type="submit">Send</button>
+      </ul>
     </form>
+    <p style="color: red;" >
+        Note : This form is mandatory to Access/inspect the premises.
+
+        <br>Disclosure :Form is for safety of premise , employees /employer.all the details recorded in the form are valid and can be store for 1 year from the date of event.
+    </p><br>
+    <p style="color: blue;" >No restriction for Health inspector /Police /First Respondent/Ambulance/firefighter to inspect.
+    </p>
   </body>
-</html>
+</html> 
